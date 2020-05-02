@@ -61,7 +61,7 @@ function buildVisitorRepr(id, el) {
 }
 
 
-// Change the client's emoji, sending updates to others
+// Change the client's emoji, updating UI and sending updates to others
 function changeEmoji(emojiNum) {
     if (!(emojiNum >=0 && emojiNum <= 6)) {
         console.error('invalid emoji number');
@@ -84,6 +84,15 @@ function changeEmoji(emojiNum) {
 socket.on('connect', function () {
     const controls = document.getElementById('controls');
     controls.style.visibility = 'inherit';
+
+    // attach listener for keys for emoji selector
+    document.addEventListener('keydown', function(event) {
+        if (!event.repeat && event.key >= '1' && event.key <= '7') {
+    	console.debug("Key event:", event);
+    	const selected = Number(event.key) - 1;
+    	changeEmoji(selected);
+        }
+    });
 });
 
 socket.on('visitor-update-data', function (msg) {
