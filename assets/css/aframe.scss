@@ -49,9 +49,47 @@ h2 {
     width: 100%;
     z-index: 10001;
 }
+
+.Exhibit__slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 20px;
+}
+
+.Exhibit__slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 5px;
+    border: 1px solid black;
+}
+
+.Exhibit__slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 8px; /* Set a specific slider handle width */
+    height: 8px; /* Slider handle height */
+    background: #FFFFFF; /* Green background */
+    border: 1px solid black;
+    cursor: pointer; /* Cursor on hover */
+}
+
+.Exhibit__slider::-moz-range-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 8px; /* Set a specific slider handle width */
+    height: 8px; /* Slider handle height */
+    background: #FFFFFF; /* Green background */
+    border: 1px solid black;
+    cursor: pointer; /* Cursor on hover */
+}
     
 .Exhibit__emoji-selector {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 20px;
+
     button {
         width: 3em;
         height: 3em;

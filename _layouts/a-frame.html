@@ -78,15 +78,21 @@
       </div>
     </div>
     <div class="Exhibit__controls" id="controls" style="visibility: hidden;">
-      <p>express your f e e l i n g s</p>
-      <div id="emoji-selector">
-        <button id="emoji-selector-0" style="background-image: url({{site.baseurl}}/assets/emoji_0.png)" onclick="changeEmoji(0);" class="selected"></button>
-        <button id="emoji-selector-1" style="background-image: url({{site.baseurl}}/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
-        <button id="emoji-selector-2" style="background-image: url({{site.baseurl}}/assets/emoji_2.png)" onclick="changeEmoji(2);"></button>
-        <button id="emoji-selector-3" style="background-image: url({{site.baseurl}}/assets/emoji_3.png)" onclick="changeEmoji(3);"></button>
-        <button id="emoji-selector-4" style="background-image: url({{site.baseurl}}/assets/emoji_4.png)" onclick="changeEmoji(4);"></button>
-        <button id="emoji-selector-5" style="background-image: url({{site.baseurl}}/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
-        <button id="emoji-selector-6" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>
+      <div class="Exhibit__slider-wrapper">
+        <p>Strobe Amount (FLASHING LIGHT WARNING)</p>
+        <input type="range" min="0" max="100" value="0" class="Exhibit__slider" id="strobe-slider">
+      </div>
+      <div class="Exhibit__emoji-selector">
+        <p>express your f e e l i n g s</p>
+        <div class="Exhibit__emoji-button-wrapper">
+          <button id="emoji-selector-0" style="background-image: url({{site.baseurl}}/assets/emoji_0.png)" onclick="changeEmoji(0);" class="selected"></button>
+          <button id="emoji-selector-1" style="background-image: url({{site.baseurl}}/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
+          <button id="emoji-selector-2" style="background-image: url({{site.baseurl}}/assets/emoji_2.png)" onclick="changeEmoji(2);"></button>
+          <button id="emoji-selector-3" style="background-image: url({{site.baseurl}}/assets/emoji_3.png)" onclick="changeEmoji(3);"></button>
+          <button id="emoji-selector-4" style="background-image: url({{site.baseurl}}/assets/emoji_4.png)" onclick="changeEmoji(4);"></button>
+          <button id="emoji-selector-5" style="background-image: url({{site.baseurl}}/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
+          <button id="emoji-selector-6" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>  
+        </div>
       </div>
     </div>
     {% include plithies.html %}
