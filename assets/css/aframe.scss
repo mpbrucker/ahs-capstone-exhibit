@@ -60,6 +60,7 @@ h2 {
     text-align: center;
     width: 100%;
     z-index: 10001;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .Exhibit__slider-wrapper {
@@ -72,7 +73,6 @@ h2 {
 
 .Exhibit__slider {
     -webkit-appearance: none; 
-    background: none;
     appearance: none;
     height: 5px;
     border: 1px solid black;
@@ -83,7 +83,6 @@ h2 {
     appearance: none;
     width: 8px; 
     height: 20px; 
-    background: none; 
     border: 1px solid black;
     border-radius: 0;
     cursor: pointer; 
@@ -94,7 +93,6 @@ h2 {
     appearance: none;
     width: 8px; 
     height: 20px; 
-    background: none; 
     border: 1px solid black;
     border-radius: 0;
     cursor: pointer; 
