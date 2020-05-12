@@ -7,7 +7,7 @@
     100% { transform: scale(1); }
 }
 
-.Exhibit__controls {
+.Exhibit__controls-msg {
     animation: 1.5s linear 1s infinite running pulse_animation;
 }
 
@@ -39,25 +39,26 @@ h2 {
     z-index: 10000;
 }
 
-#controls {
+.Exhibit__controls {
     font-family: 'Terminal Grotesque', Helvetica, Arial, sans-serif;
     position: absolute;
     bottom: 1em;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     width: 100%;
     z-index: 10001;
+}
     
-
-    #emoji-selector {
-        margin: 0 auto;
-        button {
-            width: 3em;
-            height: 3em;
-            background-size: contain;
-        }
-        button.selected {
-            border-color: black;
-            border-width: medium;
-        }
+.Exhibit__emoji-selector {
+    margin: 0 auto;
+    button {
+        width: 3em;
+        height: 3em;
+        background-size: contain;
+    }
+    button.selected {
+        border-color: black;
+        border-width: medium;
     }
 }
