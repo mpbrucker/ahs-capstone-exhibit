@@ -1,5 +1,4 @@
-{% assign projects = site.data.projects | concat: site.projects %}
-{% for project in projects %}
+{% for project in site.data.projects %}
     {%- if project.pos And project.pos != "" And project.pos != nil -%}
         <a-box 
             height="1.2"
@@ -37,7 +36,7 @@
             text="width: 1.5; font: exo2bold; zOffset: .3; anchor: center; align: center; color: black; value: {{project.author}}\n{{project.title}}\n(click{{discuss}})" 
         ></a-entity> 
         <a-box
-            src="small/{{project.img | relative_url}}"
+            src="{{site.baseurl}}/small/{{project.img}}"
             id={{box_id}}
             class="clickable"
             clicklink="href: {{hyperlink}}"

@@ -13,16 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AHS CAP ONLINE
+title: Olin Library VR
 description: >- # this means to ignore newlines until "baseurl:"
-  AHS Capstone provides Olin students the opportunity to dive deep in their AHS concentration and create an original, independent project with guidance and input from content-expert mentors. Each year, the AHS Capstone class has a tradition of sharing our work with the Olin community in a live, interactive exhibit—inspiring current conversations and future AHS work and play. During this time of social distancing, we believe AHS can uplift, inspire, and connect us more than ever—so we offer to you “AHS Cap at a Distance”.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ahscap.olin.build" # the base hostname & protocol for your site, e.g. http://example.com
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
+baseurl: "/ahs-capstone-exhibit" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
@@ -30,8 +24,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
-exhibitlink: asdf
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

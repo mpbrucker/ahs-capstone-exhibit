@@ -23,14 +23,14 @@
     <a-scene inspector-plugin-recast background="color: #FBB">
       <a-assets>
         <img id="skyTexture" src={{'/assets/bg.jpg' | relative_url}} />
-        <img id="sun" src="/assets/pmillitubby.png">
-        <a-asset-item id="emoji_0" src="/assets/models/emoji_0.glb"></a-asset-item>
-        <a-asset-item id="emoji_1" src="/assets/models/emoji_1.glb"></a-asset-item>
-        <a-asset-item id="emoji_2" src="/assets/models/emoji_2.glb"></a-asset-item>
-        <a-asset-item id="emoji_3" src="/assets/models/emoji_3.glb"></a-asset-item>
-        <a-asset-item id="emoji_4" src="/assets/models/emoji_4.glb"></a-asset-item>
-        <a-asset-item id="emoji_5" src="/assets/models/emoji_5.glb"></a-asset-item>
-        <a-asset-item id="emoji_6" src="/assets/models/emoji_6.glb"></a-asset-item>
+        <img id="sun" src="{{site.baseurl}}/assets/pmillitubby.png">
+        <a-asset-item id="emoji_0" src="{{site.baseurl}}/assets/models/emoji_0.glb"></a-asset-item>
+        <a-asset-item id="emoji_1" src="{{site.baseurl}}/assets/models/emoji_1.glb"></a-asset-item>
+        <a-asset-item id="emoji_2" src="{{site.baseurl}}/assets/models/emoji_2.glb"></a-asset-item>
+        <a-asset-item id="emoji_3" src="{{site.baseurl}}/assets/models/emoji_3.glb"></a-asset-item>
+        <a-asset-item id="emoji_4" src="{{site.baseurl}}/assets/models/emoji_4.glb"></a-asset-item>
+        <a-asset-item id="emoji_5" src="{{site.baseurl}}/assets/models/emoji_5.glb"></a-asset-item>
+        <a-asset-item id="emoji_6" src="{{site.baseurl}}/assets/models/emoji_6.glb"></a-asset-item>
       </a-assets>
       <!-- <a-sky src="#skyTexture"></a-sky> -->
       <a-entity light="color: #FBB; type: ambient"></a-entity>
@@ -54,7 +54,7 @@
             width="0.0085" 
             height="0.013" 
             position="-0.001 0.003 -.29" 
-            src={{'assets/cursor.png' | relative_url}} 
+            src={{'/assets/cursor.png' | relative_url}} 
             visible="false"
           ></a-image>
         </a-entity>
@@ -80,13 +80,13 @@
     <div id="controls" style="visibility: hidden;">
       <p>express your f e e l i n g s</p>
       <div id="emoji-selector">
-        <button id="emoji-selector-0" style="background-image: url(/assets/emoji_0.png)" onclick="changeEmoji(0);" class="selected"></button>
-        <button id="emoji-selector-1" style="background-image: url(/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
-        <button id="emoji-selector-2" style="background-image: url(/assets/emoji_2.png)" onclick="changeEmoji(2);"></button>
-        <button id="emoji-selector-3" style="background-image: url(/assets/emoji_3.png)" onclick="changeEmoji(3);"></button>
-        <button id="emoji-selector-4" style="background-image: url(/assets/emoji_4.png)" onclick="changeEmoji(4);"></button>
-        <button id="emoji-selector-5" style="background-image: url(/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
-        <button id="emoji-selector-6" style="background-image: url(/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>
+        <button id="emoji-selector-0" style="background-image: url({{site.baseurl}}/assets/emoji_0.png)" onclick="changeEmoji(0);" class="selected"></button>
+        <button id="emoji-selector-1" style="background-image: url({{site.baseurl}}/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
+        <button id="emoji-selector-2" style="background-image: url({{site.baseurl}}/assets/emoji_2.png)" onclick="changeEmoji(2);"></button>
+        <button id="emoji-selector-3" style="background-image: url({{site.baseurl}}/assets/emoji_3.png)" onclick="changeEmoji(3);"></button>
+        <button id="emoji-selector-4" style="background-image: url({{site.baseurl}}/assets/emoji_4.png)" onclick="changeEmoji(4);"></button>
+        <button id="emoji-selector-5" style="background-image: url({{site.baseurl}}/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
+        <button id="emoji-selector-6" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>
       </div>
     </div>
     {% include plithies.html %}
