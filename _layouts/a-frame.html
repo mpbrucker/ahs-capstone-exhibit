@@ -33,8 +33,8 @@
         <a-asset-item id="emoji_6" src="{{site.baseurl}}/assets/models/emoji_6.glb"></a-asset-item>
       </a-assets>
       <!-- <a-sky src="#skyTexture"></a-sky> -->
-      <a-entity light="color: #FBB; type: ambient"></a-entity>
-      <a-entity light="color: #FCB; intensity: 0.6; castShadow: true; type: point;" position="11.28605 4.5939 -12.52874"></a-entity>
+      <!-- <a-entity light="color: #FBB; type: ambient"></a-entity> -->
+      <a-entity light="color: #FED; intensity: 1.5; castShadow: true; type: point;" strobe position="11.28605 4.5939 -12.52874"></a-entity>
        <a-entity id="rig"
                 movement-controls="constrainToNavMesh: true"
                 speed="0.3"
@@ -80,7 +80,7 @@
     <div class="Exhibit__controls" id="controls" style="visibility: hidden;">
       <div class="Exhibit__slider-wrapper">
         <p>Strobe Amount (FLASHING LIGHT WARNING)</p>
-        <input type="range" min="0" max="100" value="0" class="Exhibit__slider" id="strobe-slider">
+        <input type="range" min="0" max="10" value="0" class="Exhibit__slider" id="strobe-slider">
         <p id="strobe-amount">0</p>
       </div>
       <div class="Exhibit__emoji-selector">

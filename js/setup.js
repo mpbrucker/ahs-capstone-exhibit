@@ -62,3 +62,39 @@ AFRAME.registerComponent('hover', {
 
     }
   });
+
+AFRAME.registerComponent('strobe', {
+    dependencies: ['light'],
+
+    init: function() {
+        this.slider = document.getElementById('strobe-slider');
+        this.lightState = true;
+        this.lastSwitch = 0;
+    },
+
+    tick: function(t, dt) {
+        var sliderVal = this.slider.value;
+        if (sliderVal == 0) {
+            if (!this.lightState) {
+                this.el.setAttribute('light', {intensity: 1.5});
+                this.lightState = true;
+            }
+        } else {
+            var timeScale = 1000 / sliderVal;
+            var timeDiff = t - this.lastSwitch;
+            if (!this.lightState) {
+                if (timeDiff > (timeScale * .9)) {
+                    this.el.setAttribute('light', {intensity: 1.5});
+                    this.lightState = true;
+                    this.lastSwitch = t;
+                }
+            } else {
+                if (timeDiff > (timeScale * .1)) {
+                    this.el.setAttribute('light', {intensity: 0});
+                    this.lightState = false;
+                    this.lastSwitch = t;
+                }
+            }
+        }
+    }
+})

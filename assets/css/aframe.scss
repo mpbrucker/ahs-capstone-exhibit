@@ -71,7 +71,8 @@ h2 {
 }
 
 .Exhibit__slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
+    -webkit-appearance: none; 
+    background: none;
     appearance: none;
     height: 5px;
     border: 1px solid black;
@@ -82,7 +83,7 @@ h2 {
     appearance: none;
     width: 8px; 
     height: 20px; 
-    background: #FFFFFF; 
+    background: none; 
     border: 1px solid black;
     border-radius: 0;
     cursor: pointer; 
@@ -93,7 +94,7 @@ h2 {
     appearance: none;
     width: 8px; 
     height: 20px; 
-    background: #FFFFFF; 
+    background: none; 
     border: 1px solid black;
     border-radius: 0;
     cursor: pointer; 
@@ -119,6 +120,9 @@ h2 {
 .Exhibit__party-button-wrapper {
     margin: 20px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .Exhibit__party-button {
