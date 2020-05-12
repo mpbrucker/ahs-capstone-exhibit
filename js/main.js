@@ -2,8 +2,14 @@ var scene = document.querySelector('a-scene');
 var bgMusic = document.querySelector('audio');
 var enterButton = document.getElementById('enter');
 var splash = document.getElementById('splash');
+var slider = document.getElementById('strobe-slider');
+var slider_val = document.getElementById('strobe-amount');
 var isLoaded = false;
 var numLocks = -1;
+
+slider.oninput = function() {
+    slider_val.innerHTML = this.value;
+}
 
 scene.addEventListener('loaded', function (e) {
     isLoaded = true;

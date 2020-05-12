@@ -65,23 +65,25 @@ h2 {
 }
 
 .Exhibit__slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none; 
     appearance: none;
-    width: 8px; /* Set a specific slider handle width */
-    height: 8px; /* Slider handle height */
-    background: #FFFFFF; /* Green background */
+    width: 8px; 
+    height: 20px; 
+    background: #FFFFFF; 
     border: 1px solid black;
-    cursor: pointer; /* Cursor on hover */
+    border-radius: 0;
+    cursor: pointer; 
 }
 
 .Exhibit__slider::-moz-range-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none; 
     appearance: none;
-    width: 8px; /* Set a specific slider handle width */
-    height: 8px; /* Slider handle height */
-    background: #FFFFFF; /* Green background */
+    width: 8px; 
+    height: 20px; 
+    background: #FFFFFF; 
     border: 1px solid black;
-    cursor: pointer; /* Cursor on hover */
+    border-radius: 0;
+    cursor: pointer; 
 }
     
 .Exhibit__emoji-selector {
