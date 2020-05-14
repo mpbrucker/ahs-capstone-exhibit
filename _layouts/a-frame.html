@@ -24,6 +24,7 @@
       <a-assets>
         <img id="skyTexture" src={{'/assets/bg.jpg' | relative_url}} />
         <img id="sun" src="{{site.baseurl}}/assets/pmillitubby.png">
+        <img id="sky" src="{{site.baseurl}}/assets/bg_pano.jpg">
         <a-asset-item id="emoji_0" src="{{site.baseurl}}/assets/models/emoji_0.glb"></a-asset-item>
         <a-asset-item id="emoji_1" src="{{site.baseurl}}/assets/models/emoji_1.glb"></a-asset-item>
         <a-asset-item id="emoji_2" src="{{site.baseurl}}/assets/models/emoji_2.glb"></a-asset-item>
@@ -31,14 +32,17 @@
         <a-asset-item id="emoji_4" src="{{site.baseurl}}/assets/models/emoji_4.glb"></a-asset-item>
         <a-asset-item id="emoji_5" src="{{site.baseurl}}/assets/models/emoji_5.glb"></a-asset-item>
         <a-asset-item id="emoji_6" src="{{site.baseurl}}/assets/models/emoji_6.glb"></a-asset-item>
+
+        <a-asset-item id="gloryhall" src="{{site.baseurl}}/assets/gloryhall.glb"></a-asset-item>
       </a-assets>
-      <!-- <a-sky src="#skyTexture"></a-sky> -->
-      <a-entity light="color: #FBB; type: ambient" id="ambient-light"></a-entity>
-      <a-entity light="color: #FED; intensity: 1.5; castShadow: true; type: point;" strobe position="11.28605 4.5939 -12.52874"></a-entity>
+      <a-sky src="#sky"></a-sky>
+      <a-entity light="color: #FBB; type: ambient; intensity: 0.5" id="ambient-light"></a-entity>
+      <a-entity light="color: #FED; intensity: 1; castShadow: true; type: point;" strobe position="11.28605 4.5939 -12.52874"></a-entity>
        <a-entity id="rig"
                 movement-controls="constrainToNavMesh: true"
                 speed="0.3"
-                position="0 0 0">
+                position="0 0 0"
+                rotation = "0 -90 0">
         <a-entity id="camera"
                   camera
                   position="0 1.6 0"
@@ -63,7 +67,8 @@
       <a-entity gltf-model={{'/assets/scene_navmesh.gltf' | relative_url}} nav-mesh visible="false"></a-entity>
       <a-image src={{'assets/thanks.jpg' | relative_url}} width="0.3" height="0.35" position="2.86 0.994 -0.495" rotation="0 45 0"></a-image>
       {% include project-pedestals.html %}
-      {% include scene.html %}
+      <a-entity gltf-model='#gloryhall' position="-28.676 0 29.2" ></a-entity>
+      <!-- <a-plane position="-0.0523 2.9 -4.6947" rotation="-90 0 0" width="100" height="100" material="side: back; color: #eeeeee" ></a-plane> -->
     </a-scene>
     <div class="Exhibit__splash" id="splash">
       <div class="Exhibit__elements">
