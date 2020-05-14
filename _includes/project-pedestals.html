@@ -19,7 +19,7 @@
         {%- assign up_pos = split_quote[0] | append: ' 1.7 ' | append: split_quote[2] -%}
         {% if project.zoom %}
             {% assign hyperlink = project.zoom %}
-            {% assign discuss = ' to join Zoom discussion' %}
+            {% assign discuss = ' to join Zoom call' %}
         {% else %}
             {% assign hyperlink = project.url | relative_url | append: project.hyperlink %}
             {% assign discuss = ' for more' %}
@@ -33,7 +33,7 @@
             height="3" 
             position={{new_pos}}
             rotation="0 45 0"
-            text="width: 1.5; font: exo2bold; zOffset: .3; anchor: center; align: center; color: black; value: {{project.author}}\n{{project.title}}\n(click{{discuss}})" 
+            text="width: 1.5; font: exo2bold; zOffset: .3; anchor: center; align: center; color: black; value: {{project.title}}\n(click{{discuss}})" 
         ></a-entity> 
         <a-box
             src="{{site.baseurl}}/small/{{project.img}}"
