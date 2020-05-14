@@ -1,107 +1,23 @@
-- author: Ava Lakmazaheri
-  title: Degrees of Freedom
-  description: How does an engineer take a hard look at her practice? Degrees of Freedom reconsiders the assumptions that drive research in biomechatronics — investigating questions about the body and testing my own assumptions about bodies and technologies — to land in an open space of questions. This exploration is guided through a curation of art pieces pertaining to the body and adaptive technologies.
-  hyperlink: http://ava.ac/dof.html
-  img: assets/dof.png
-  pos: '"-2.8 .6 -0.2"'
+- title: Dance Floor
+  img: assets/test-06.png
+  zoom: https://zoom.us/test
+  pos: '"16.2 .6 -2.3"'
   rotation: '"0 45 0"'
 
-- author: Vicky McDermott and Prava Dhulipalla
-  title: A Guide to Student-Led Courses
-  description: For our AHS Capstone project this semester, we created a guide for students interested in being involved with Student Led Courses (SLCs) at Olin. We also worked to create an archive of the course materials for the SLC we are teaching this semester in Advanced Algorithms. We have had the opportunity to work on two SLCs during our time at Olin (DSA and Advanced Algorithms), and we think SLCs are an amazing and uniquely Olin opportunity. We want our guide to serve as a blueprint for students interested in pursuing the SLC route in the future. 
-  hyperlink: https://pravaolin.wixsite.com/olinslc
-  img: assets/slc.jpg
-  pos: '"-1.4 .6 -6.4"'
+- title: Snack Room
+  img: assets/test-06.png
+  zoom: https://zoom.us/test
+  pos: '"9.73 .6 -6.52"'
   rotation: '"0 45 0"'
 
-- author: Kai Loewenstein
-  title: Globsters - A Visual Novel
-  description: This semester, I created some assets for a visual novel I'm working on about kids with superpowers. Sam's superpower is the ability to identify "globsters," the remnants of organic bodies that wash up on shore, bloated and decomposed to the point where they are mistaken for monsters. But what happens when Sam really does find a monster? 
-  hyperlink: https://drive.google.com/open?id=1VbQ9c4_36JSi80l6TtnfisT9TZh9VoDm
-  img: assets/glob.jpg
-  pos: '"5.9 .6 -10.2"'
+- title: Bar
+  img: assets/test-06.png
+  zoom: https://zoom.us/test
+  pos: '"29.9 .6 -13.7"'
   rotation: '"0 45 0"'
 
-- author: Aurora Bunten
-  title: The Oneness
-  description: The Oneness is an installation sound experience that speaks to the transience and change that our world is currently experiencing. The instillation comprises a sound composition that is experienced in a special environment. The sound composition is an eight minute long combination of varying layers of sine frequencies, changing in intensity and tone throughout the piece, with other underlying sounds that affect the mood of the piece. The composition is intended to bring the participant to the present and make them focus on their body/physical senses; bringing them first more viscerally into themselves and then the surrounding world once the experience ends.
-  hyperlink: https://abunten.github.io/
-  img: assets/one.png
-  pos: '"-4.499 .6 -7.142"'
-  rotation: '"0 45 0"'  
-
-- author: Miranda Lao
-  title: red string
-  description: An examination of my relationship to math.
-  hyperlink: https://mirandalao.com/2020/04/27/red-string.html
-  img: assets/red.jpg
-  pos: '"3.4 .6 -8.166"'
-  rotation: '"0 45 0"' 
-
-- author: Athmika Senthilkumar
-  title: Neoliberal Influences on the Founding of Olin College
-  description: In this paper, I unpack the gravity of the founding trustees’ order that the college embody—as a condition for receiving endowments and grants—values rooted in free enterprise and capitalism. In doing so, I attempt to ponder critical questions about why Olin College was conceived and why certain features atypical on paper at the time in higher education, like the refusal to offer any path to faculty tenureship, were built into its founding. If one fails to examine the values of Olin’s founding, one risks perpetuating institutional practices and pedagogical beliefs that uncritically reproduce those values. By highlighting the values that the institution inherited through its founding, I hope to inspire explorations of what Olin College might look like under different value systems.
-  hyperlink: https://docs.google.com/document/d/1Ofwp-ZXkIzeTZ3P_DIZvaf4xqgAzvNtKf90en_jS7p0/edit?usp=sharing
-  img: assets/olin.jpg
-  pos: '"7.096 .6 -19.121"'
-  rotation: '"0 45 0"' 
-
-- author: Tobias Shapinsky
-  title: In a Different Light
-  description: Ever wondered what the world would look like if you could see infrared? Well, in In a Different Light I modified a digital camera to find out. This set of images from Massachusetts, DC and New York show the world as you have never seen it before.
-  hyperlink: https://photos.app.goo.gl/FbMv5etwwa7EmmbC8
-  img: assets/infra.jpg
-  pos: '"4.017 .6 -19.671"'
-  rotation: '"0 45 0"' 
-
-- author: Annie Kroo
-  title: Value Alignment in Change Initiatives
-  description: In this project I have explored how value alignment interacts with change initiatives in an Olin context. This exploration draws on educational, cultural, and organizational change theory to understand areas of opportunity for the Olin community to improve our efficacy of innovation. This project is a quantitative and qualitative analysis based upon the Argosy Study conducted by Jon Stolk and Tess Edmonds comprised of 34 Olin faculty members responses.
-  hyperlink: https://sites.google.com/view/valuealignmentinchange/home
-  img: assets/value.png
-  pos: '"1.994 .6 -19.671"'
+- title: Games
+  img: assets/test-06.png
+  zoom: https://zoom.us/test
+  pos: '"23.9 .6 -9.1"'
   rotation: '"0 45 0"'
-
-- author: Gretchen Rice
-  title: A Glimpse
-  description: This collection looks into the stories of five Olin women seniors. The interviews were centered around the women's journeys through their education with a significant focus on gender. In this collection, I try to represent the women through photography and reflections about their interviews. I invite you to explore this collection and use their stories and an inspiration to reflect on your own experiences. 
-  hyperlink: https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aa0f63d78-8975-4f9d-8fdc-cae35c3cf78f
-  img: assets/glimpse.jpg
-  pos: '"-0.099 .6 -19.671"'
-  rotation: '"0 45 0"'
-
-- author: Henry Rachootin
-  title: Mana Potion
-  description: In the fiction of a story, magic is a real part of the world. Characters are able to study and perfect the use of magic through skill and dedication. In reality, we reserve the concept of magic for things that don't exist. We deride the magical as old fashioned and superstitious. This ontological decision forces us into a non-magical reality. We have systematically eliminated any trace of wonder at the power that does exist around us, creating a world were the natural processes that power our world are corrupted by the inclusion of science or math, no longer magical now that we can put numbers to them. These photos point out some of the ways that magic really does manifest, in the power of money, the power of certain liquids, and the power of levitation. The blue potion imbues its holder with the power of the dollar inside. The red potion can temporarily ease sickness by reducing fever and swelling. The deep green potion does the same, and also puts the drinker to sleep. The levitation is performed with a thin film of superconducting crystal, the mechanics of which are not well understood by physics.
-  hyperlink: https://photos.app.goo.gl/8AoVHxmDy4dzrhVG9
-  img: assets/potion.jpg
-  pos: '"-2.280 .6 -19.671"'
-  rotation: '"0 45 0"'
-
-- author: Onur Talu
-  title: Politics in the Middle East
-  description: International relations and foreign policy aren’t things we talk about often at Olin. The average American doesn’t live with the consequences of US foreign policy, however the majority of the world’s population does. The Vietnamese, the Chilean, the Turkish and the Greek felt them during the Cold War, just as the Syrians, Yemenis and Iraqis do today. I think it’s important to learn about international relations, and their direct ramifications on people’s lives. With this project, I hope to start a conversation about international relations, different countries’ foreign policies and their impact on the lives of regular people, especially for those that live in the Middle East.
-  hyperlink: https://drive.google.com/open?id=19Ixb0z9gOWvf_esdWAF2voxHqHntAgCw
-  img: assets/politics.png
-  pos: '"-8.759 .6 -19.431"'
-  rotation: '"0 45 0"'
-
-- author: Evan Lloyd New-Schmidt
-  title: Large Format Film Photography
-  description: Equipped with a camera from the 1940s, I've been taking photos of my experience at Olin pre- and post-Corona. One of the earliest photographic methods, large format photography has remained relevant due to the high-quality negatives and level of control that it offers photographers.  In addition to learning how to use the camera, I've also been developing the film by hand using a variety of methods. While you won't be able to see the physical prints or negatives, I've uploaded scans of the work.
-  hyperlink: https://evan.new-schmidt.com/things/large-format-photography
-  img: assets/large.jpg
-  pos: '"2.549 .6 -0.609"'
-  rotation: '"0 45 0"'
-
-- author: Jeremy Ryan
-  title: From Puente to Chopin - Musical Exploration and Composition
-  description: For this project, I explored two musical styles I had never composed in before - the nocturne, in the style of John Fields or Frédéric Chopin; and the Afro-Cuban son montuno. I researched the defining characteristics of these genres and produced two original compositions, each about three minutes in length.
-  hyperlink: https://docs.google.com/document/d/1ycspscj6o-Uqt8UpAwbHoekNj4UtXwdNzTJsrdQ6Lho/edit?usp=sharing
-  img: assets/piano.png
-  pos: '"2.261 .6 -12.507"'
-  rotation: '"0 45 0"'
-
-
-
-
