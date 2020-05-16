@@ -67,6 +67,7 @@ function buildVisitorRepr(id, el) {
     textEl.setAttribute('align', 'center');
     textEl.getAttribute('position').y = 0.5;
     textEl.setAttribute('visible', true);
+    textEl.setAttribute('font', 'monoid');
     textEl.object3D.rotation.y = Math.PI;
     el.appendChild(textEl);
     // make a second to point backwards
