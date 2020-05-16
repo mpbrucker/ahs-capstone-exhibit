@@ -42,13 +42,16 @@ document.addEventListener('clicklink', onClick);
 const DEFAULT_EMOJI = 0;
 var selected_emoji = DEFAULT_EMOJI;
 
+var visitors;
+
 // modifiers for aframe-copresence
 function buildVisitorRepr(id, el) {
     // const choice = Math.floor(Math.random() * 7);
     el.setAttribute('shadow', {'receive': false});
     for (let i = 0; i < 7; i++) {
         var headEl = document.createElement('a-entity');
-        headEl.className = 'head-' + i;
+        headEl.classList.add('head');
+        headEl.classList.add('head-' + i);
         if (i == DEFAULT_EMOJI) {
             headEl.setAttribute('visible', true);
         } else {
@@ -58,6 +61,18 @@ function buildVisitorRepr(id, el) {
         headEl.setAttribute('gltf-model', '#emoji_' + i);
         el.appendChild(headEl);
     }
+    var textEl = document.createElement('a-text');
+    textEl.className = 'name-text';
+    textEl.setAttribute('value', '');  // set to blank initially
+    textEl.setAttribute('align', 'center');
+    textEl.getAttribute('position').y = 0.5;
+    textEl.setAttribute('visible', true);
+    textEl.object3D.rotation.y = Math.PI;
+    el.appendChild(textEl);
+    // make a second to point backwards
+    var textEl2 = textEl.cloneNode();
+    textEl2.getAttribute('position').y = 0.5;
+    el.appendChild(textEl2);
 }
 
 
@@ -80,6 +95,13 @@ function changeEmoji(emojiNum) {
     selected_emoji = emojiNum;
 }
 
+function changeName(name) {
+    socket.emit('update-data', {
+        name
+    });
+    console.debug(`Updated name to ${name}`);
+}
+
 // only show controls if socket.io managed to connect
 socket.on('connect', function () {
     const controls = document.getElementById('controls');
@@ -93,6 +115,19 @@ socket.on('connect', function () {
     	changeEmoji(selected);
         }
     });
+
+    // attach text box listener
+    const name_el = document.getElementById('name-selector');
+    name_el.addEventListener('change', function(event) {
+        const name = event.target.value;
+        changeName(name);
+    });
+});
+
+socket.on('disconnect', function() {
+    console.warn('disconnected from server');
+    const controls = document.getElementById('controls');
+    controls.style.visibility = 'hidden';
 });
 
 socket.on('visitor-update-data', function (msg) {
@@ -109,15 +144,21 @@ function handleVisitorUpdate(id, data) {
     }
     if (data.emoji != undefined) {
         const emoji = data.emoji;
-        el.childNodes.forEach(function (c) {
+        const heads = el.getElementsByClassName('head');
+        for (let i = 0; i < heads.length; i++) {
+            const c = heads.item(i);
             c.setAttribute('visible', false);
-        })
+        }
         let newHeadEl = el.getElementsByClassName('head-' + emoji)[0];
         newHeadEl.setAttribute('visible', true);
     }
     if (data.name != undefined) {
         const name = data.name;
         // TODO
+        const name_els = el.getElementsByClassName('name-text');
+        for (const el of name_els) {
+            el.setAttribute('value', name);
+        }
     }
 }
 
