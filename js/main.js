@@ -109,6 +109,10 @@ socket.on('connect', function () {
 
     // attach listener for keys for emoji selector
     document.addEventListener('keydown', function(event) {
+        // don't overlap with name input
+        if (event.target.tagName == 'INPUT') {
+            return;
+        }
         if (!event.repeat && event.key >= '1' && event.key <= '7') {
     	console.debug("Key event:", event);
     	const selected = Number(event.key) - 1;
