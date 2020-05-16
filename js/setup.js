@@ -78,7 +78,7 @@ AFRAME.registerComponent('strobe', {
         if (sliderVal == 0) {
             if (!this.lightState) {
                 this.ambient.setAttribute('light', {intensity: 0.5});
-                this.el.setAttribute('light', {intensity: 1});
+                this.el.setAttribute('light', {intensity: 0.5});
                 this.lightState = true;
             }
         } else {
