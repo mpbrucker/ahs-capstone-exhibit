@@ -51,16 +51,24 @@ h2 {
     z-index: 10000;
 }
 
-.Exhibit__controls {
+.Exhibit__environ-controls, .Exhibit__copresence-controls {
     font-family: 'Terminal Grotesque', Helvetica, Arial, sans-serif;
     position: absolute;
-    bottom: 1em;
     display: flex;
-    justify-content: space-between;
     text-align: center;
     width: 100%;
-    z-index: 10001;
+    // z-index: 10001;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.Exhibit__environ-controls {
+    top: 0.25em;
+    justify-content: space-between;
+}
+
+.Exhibit__copresence-controls { 
+    bottom: 0.25em;
+    justify-content: space-evenly;
 }
 
 .Exhibit__slider-wrapper {

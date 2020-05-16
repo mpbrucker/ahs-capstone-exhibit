@@ -81,12 +81,18 @@
         <button class="Exhibit__link" id="enter">LOADING</button>
       </div>
     </div>
-    <div class="Exhibit__controls" id="controls" style="visibility: hidden;">
+    <div class="Exhibit__environ-controls">
       <div class="Exhibit__slider-wrapper">
         <p>Strobe Amount (FLASHING LIGHT WARNING)</p>
         <input type="range" min="0" max="10" value="0" class="Exhibit__slider" id="strobe-slider">
         <p id="strobe-amount">0</p>
       </div>
+      <div class="Exhibit__party-button-wrapper">
+        <p>PARTY METER</p>
+        <img class="Exhibit__party-button" src="{{site.baseurl}}/assets/header-icon-06.png" />
+      </div>
+    </div>
+    <div class="Exhibit__copresence-controls" id="controls" style="visibility: hidden;">
       <div class="Exhibit__emoji-selector">
         <p>identify urself</p>
         <input id=name-selector type="text" maxlength="32">
@@ -100,10 +106,6 @@
           <button id="emoji-selector-5" title="anger (6)" style="background-image: url({{site.baseurl}}/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
           <button id="emoji-selector-6" title="sad (7)" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>  
         </div>
-      </div>
-      <div class="Exhibit__party-button-wrapper">
-        <p>PARTY METER</p>
-        <img class="Exhibit__party-button" src="{{site.baseurl}}/assets/header-icon-06.png" />
       </div>
     </div>
     {% include plithies.html %}
