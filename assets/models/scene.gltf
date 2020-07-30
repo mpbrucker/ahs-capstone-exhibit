@@ -1,0 +1,268 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 6735,
+      "max": [
+        1.7618399858474731,
+        0.24664999544620514,
+        0.0092200003564357758
+      ],
+      "min": [
+        -1.5613600015640259,
+        -6.5476598739624023,
+        -1.8599900007247925
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 80820,
+      "componentType": 5126,
+      "count": 6735,
+      "max": [
+        0.9999421238899231,
+        0.99998217821121216,
+        0.9998822808265686
+      ],
+      "min": [
+        -0.99911171197891235,
+        -0.99991166591644287,
+        -0.99998313188552856
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 39924,
+      "max": [
+        6734
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 161640,
+      "componentType": 5126,
+      "count": 2894,
+      "max": [
+        -0.47663000226020813,
+        0.35800999402999878,
+        0.61796998977661133
+      ],
+      "min": [
+        -1.8949199914932251,
+        0.099160000681877136,
+        -0.59435999393463135
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 196368,
+      "componentType": 5126,
+      "count": 2894,
+      "max": [
+        0.99191218614578247,
+        0.9998747706413269,
+        0.99925786256790161
+      ],
+      "min": [
+        -0.9924352765083313,
+        -0.99985164403915405,
+        -0.99923479557037354
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 159696,
+      "componentType": 5125,
+      "count": 17280,
+      "max": [
+        2893
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Mike Rowley (https://sketchfab.com/scrumpy26)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/ec81ab8f32f64e1899736616932c9d28",
+      "title": "sweat pants"
+    },
+    "generator": "Sketchfab-3.18.2",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 228816,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 231096,
+      "byteOffset": 228816,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 459912,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Scene_-_Root",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "pants",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "cord",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        5
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.1667800000000002,
+        0,
+        0,
+        0,
+        0,
+        -0,
+        1,
+        0,
+        0,
+        -1,
+        -0,
+        0,
+        -0.15818000000000002,
+        -1.13212,
+        7.1256599999999999,
+        1
+      ],
+      "name": "pants"
+    },
+    {
+      "mesh": 0,
+      "name": "pants"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.1578599999999999,
+        -1.33619,
+        6.6256799999999991,
+        1
+      ],
+      "name": "cord"
+    },
+    {
+      "mesh": 1,
+      "name": "cord"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
