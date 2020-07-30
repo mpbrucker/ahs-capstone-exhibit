@@ -14,7 +14,7 @@
     <script>
       var socket = io('{{COPRESENCE_URL}}');
     </script>
-    <script src="{{COPRESENCE_URL}}/client.js"></script>
+    <script src="{{site.baseurl}}/js/client.js"></script>
     <!-- Love, Matt & Evan -->
   </head>
   <body>
@@ -24,8 +24,9 @@
       <a-assets>
         <img id="skyTexture" src={{'/assets/bg.jpg' | relative_url}} />
         <img id="sun" src="{{site.baseurl}}/assets/pmillitubby.png">
-        <img id="sky" src="{{site.baseurl}}/assets/bg_pano.jpg">
-        <a-asset-item id="emoji_0" src="{{site.baseurl}}/assets/models/emoji_0.glb"></a-asset-item>
+        <img id="sky" src="{{site.baseurl}}/assets/collage-full.jpg">
+        <img id="texture" src="{{site.baseurl}}/assets/emoji_0.png">
+        <a-asset-item id="emoji_0" src="{{site.baseurl}}/assets/models/scene.gltf"></a-asset-item>
         <a-asset-item id="emoji_1" src="{{site.baseurl}}/assets/models/emoji_1.glb"></a-asset-item>
         <a-asset-item id="emoji_2" src="{{site.baseurl}}/assets/models/emoji_2.glb"></a-asset-item>
         <a-asset-item id="emoji_3" src="{{site.baseurl}}/assets/models/emoji_3.glb"></a-asset-item>
@@ -59,14 +60,14 @@
             height="0.013" 
             position="-0.001 0.003 -.29" 
             src={{'/assets/cursor.png' | relative_url}} 
-            visible="false"
+            visible="false" 
           ></a-image>
         </a-entity>
       </a-entity>
       <a-image src="#sun" position="-8.11621 16.89594 -7.70673" material="" geometry="" rotation="-37.32820035277313 -82.80214167892119 -36.3610475945923" scale="20.14973 20.15 20.15"></a-image>
       <a-entity gltf-model={{'/assets/scene_navmesh.gltf' | relative_url}} nav-mesh visible="false"></a-entity>
       {% include project-pedestals.html %}
-      <a-entity gltf-model='#gloryhall' position="-28.676 0 29.2" ></a-entity>
+      <a-entity gltf-model='#gloryhall' position="-28.676 0 29.2"></a-entity>
       <!-- <a-plane position="-0.0523 2.9 -4.6947" rotation="-90 0 0" width="100" height="100" material="side: back; color: #eeeeee" ></a-plane> -->
     </a-scene>
     <div class="Exhibit__splash" id="splash">
@@ -96,15 +97,15 @@
       <div class="Exhibit__emoji-selector">
         <p>identify urself</p>
         <input id=name-selector type="text" maxlength="32">
-        <p>express your f e e l i n g s</p>
+        <p>express your p a n t s</p>
         <div class="Exhibit__emoji-button-wrapper">
-          <button id="emoji-selector-0" title="joy (1)" style="background-image: url({{site.baseurl}}/assets/emoji_0.png)" onclick="changeEmoji(0);" class="selected"></button>
-          <button id="emoji-selector-1" title="very joy (2)" style="background-image: url({{site.baseurl}}/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
+          <button id="emoji-selector-0" title="pants (1)" style="background-image: url({{site.baseurl}}/assets/pants.png)" onclick="changeEmoji(0);" class="selected"></button>
+          <!-- <button id="emoji-selector-1" title="very joy (2)" style="background-image: url({{site.baseurl}}/assets/emoji_1.png)" onclick="changeEmoji(1);"></button>
           <button id="emoji-selector-2" title="hand hit (3)" style="background-image: url({{site.baseurl}}/assets/emoji_2.png)" onclick="changeEmoji(2);"></button>
           <button id="emoji-selector-3" title="internal organ (4)" style="background-image: url({{site.baseurl}}/assets/emoji_3.png)" onclick="changeEmoji(3);"></button>
           <button id="emoji-selector-4" title="hand shake (5)" style="background-image: url({{site.baseurl}}/assets/emoji_4.png)" onclick="changeEmoji(4);"></button>
           <button id="emoji-selector-5" title="anger (6)" style="background-image: url({{site.baseurl}}/assets/emoji_5.png)" onclick="changeEmoji(5);"></button>
-          <button id="emoji-selector-6" title="sad (7)" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>  
+          <button id="emoji-selector-6" title="sad (7)" style="background-image: url({{site.baseurl}}/assets/emoji_6.png)" onclick="changeEmoji(6);"></button>   -->
         </div>
       </div>
     </div>

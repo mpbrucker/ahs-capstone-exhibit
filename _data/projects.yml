@@ -1,23 +1,6 @@
-- title: Dance Floor
-  img: assets/test-06.png
-  zoom: https://olin.zoom.us/j/99928430000
-  pos: '"16.2 .6 -2.3"'
+- title: Happens to the best of us
+  img: assets/pants.png
+  zoom: https://olin.zoom.us/j/96820829258
+  pos: '"27.397 .6 -9.033"'
   rotation: '"0 45 0"'
 
-- title: Snack Room
-  img: assets/test-06.png
-  zoom: https://olin.zoom.us/j/92447199997?pwd=VHFhb0hFb3Fock5xZENqM0s4SFR2dz09
-  pos: '"9.73 .6 -6.52"'
-  rotation: '"0 45 0"'
-
-- title: Bar
-  img: assets/test-06.png
-  zoom: https://olin.zoom.us/j/4276330749
-  pos: '"29.9 .6 -13.7"'
-  rotation: '"0 45 0"'
-
-- title: Games
-  img: assets/test-06.png
-  zoom: https://olin.zoom.us/j/94186080040
-  pos: '"23.9 .6 -9.1"'
-  rotation: '"0 45 0"'
